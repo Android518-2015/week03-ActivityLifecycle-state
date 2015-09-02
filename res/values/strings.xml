@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello, welcome to  My Activity Lifecyle and State Demo</string>
+    <string name="dialog_message">CSIS is watching you!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="app_name">MyActivityLifeCycle</string>
+    <string name="kill">Kill</string>
+    <string name="count">Count</string>
+    <string name="newActivity">New Activity</string>
+    <string name="newdialogue">Alert Dialogue</string>
+    
+
+</resources>
