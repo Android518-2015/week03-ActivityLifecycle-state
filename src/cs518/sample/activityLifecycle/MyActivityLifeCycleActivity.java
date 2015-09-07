@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +15,8 @@ import android.widget.TextView;
  * In Activity2 we use the instanceStateBundle to maintain the counter information
  * In MyActivityLifeCycleActivity.java we do not save any state. 
  * note the run time differences, when/is the counter reset 
+ * @author PMCampbell
+ * @version 2015
  */
 
 public class MyActivityLifeCycleActivity extends Activity {
@@ -65,6 +68,7 @@ public class MyActivityLifeCycleActivity extends Activity {
 		// so we don't need a reference to it unless we are changing something.
 	
 	}   //onCreate()
+	
 	public void launchDialogue(View view)  {
 
 		Log.d(TAG, "launch alert dialogue");
@@ -85,6 +89,13 @@ public class MyActivityLifeCycleActivity extends Activity {
 		AlertDialog dialog = builder.create();
 		dialog.show();
 	} // launchDialogue()
+	
+	public void rotateScreen(View view) {
+		if (getRequestedOrientation() == ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE)
+	       setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+		else 
+			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+	}  //rotateScreen()
 	
 	@Override
 	protected void onStart() {

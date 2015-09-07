@@ -19,8 +19,10 @@ public final class R {
         public static final int countButton=0x7f050002;
         public static final int counterValue=0x7f050000;
         public static final int dialogueButton=0x7f050004;
-        public static final int input=0x7f050005;
+        public static final int input=0x7f050006;
         public static final int killButton=0x7f050001;
+        public static final int message=0x7f050007;
+        public static final int rotateScreen=0x7f050005;
     }
     public static final class layout {
         public static final int main=0x7f030000;
@@ -32,7 +34,10 @@ public final class R {
         public static final int dialog_ok=0x7f040002;
         public static final int hello=0x7f040000;
         public static final int kill=0x7f040004;
+        public static final int messageactivity2=0x7f04000a;
+        public static final int messagemain=0x7f040009;
         public static final int newActivity=0x7f040006;
         public static final int newdialogue=0x7f040007;
+        public static final int rotatescreen=0x7f040008;
     }
 }
