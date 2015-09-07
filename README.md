@@ -1,8 +1,12 @@
-# week2-simple-views
-Simple example of the use of ViewGroup LinearLayout 
-and some  View widgets
-manipulation of content programmatically
+# week03-ActivityLifecyccle-state
+Sample code logging main activity lifecycle methods
+Main activity does not save state
+Secondary activity does save state
 
-Plus the use of an  intent to invoke another activity
+Use of logcat to watch the logging
+adb logcat -s LIFECYC
+adb logcat -s LIFECYC2
 
+Take this code and modify it to have Activity2 launch Activity3
+experiment and see what happens
 
